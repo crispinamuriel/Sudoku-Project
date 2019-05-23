@@ -12,15 +12,15 @@ If you've never played sudoku before, try an "easy" puzzle from the New York Tim
 
 This is a Bootcamp Prep Project. Projects are for you to work on over the course of the week as you like.
 
-*GOAL
+## GOAL
 The ultimate goal of this project is to create a "sudoku checker". The sudoku checker will be a function that accepts a single sudoku grid (represented by an array of arrays) and returns true if the grid follows the rules above and false if not.
 
-*APPROACH
+## APPROACH
 Your final sudoku checker function will be relatively complex. To build it, we're going to write several simple functions that combine to perform a larger complex operation. The concept of building complicated functions by combining simple ones is referred to as function composition).
 
 We know that our final function will need to check whether a given grid follows the three rules above. This provides an excellent "separation of concerns".
 
-*SEPARATION OF CONCERNS
+## SEPARATION OF CONCERNS
 Separation of concerns is another programming design principle, which states that a program should be split into distinct sections, such that each section addresses a separate concern.
 
 There are several benefits to writing code with good separation of concerns. First, your code becomes more expressive. When describing the problem of sudoku in plain English, we split the puzzle into three rules. By mirroring that organization, your code becomes easier for you and other developers to interpret.
@@ -29,7 +29,7 @@ Second, separation of concerns leads to modular code. With modular code, individ
 
 Modular code also allows you to improve or modify one section of code without having to know (or change) the details of other sections. This benefit, and the others listed, will become clearer as you write more, increasingly complex code.
 
-*GETTING STARTED
+## GETTING STARTED
 To start, using an empty CodePen or repl.it, write the following functions:
 
 getRow: This function should accept two arguments: a sudoku grid (represented by an array of arrays) and a row index. The function should return an array containing the numbers in the specified row.
@@ -40,7 +40,7 @@ getGrid: This function should accept three arguments: a sudoku grid, and an x an
 
 Remember that our puzzle is broken into 9 subgrids. In our coordinate system, (0,0) will represent the subgrid in the upper left, (1,0) will represent the upper-middle and so on.
 
-##See examples below:
+## See examples below:
 
 let puzzle = [[ 8,9,5,   7,4,2,   1,3,6 ],
               [ 2,7,1,   9,6,3,   4,8,5 ],
@@ -74,8 +74,8 @@ getSection(puzzle, 1,0);
 // -> [ 7,4,2,9,6,3,5,8,1 ]
 
 
-*Part II
-*Project Sudoku Continued
+## Part II
+## Project Sudoku Continued
 We now have functions that accept a sudoku grid and return specific subsections (row, column, or subgrid).
 
 Now we need to write a function that will accept a subsection and check that it includes the numbers 1-9 (with no repeats). Write a function includes1to9 that accomplishes this.
